@@ -5,7 +5,7 @@ Last Update : 24/12/2017
 Current state : **Prototype finished**  
 
 The goal is to read, store and display the temperature of a barbecue/grill to follow the cooking.  
-I hope it would be a very good friend for cooking sessions on my barbecue.  
+I hope it will be a very good friend for cooking sessions on my barbecue.  
 
 **To do List for final v1 ! :**  
 
