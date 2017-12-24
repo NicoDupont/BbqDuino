@@ -61,7 +61,7 @@ For the project I used :
 
 **Functional Diagram :**
 
-![diagram bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Docs/diagram bbqduino.png)
+![diagram bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Docs/diagram%20bbqduino.png)
 
 **Parts used :**
 
