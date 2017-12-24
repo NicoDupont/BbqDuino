@@ -1,6 +1,6 @@
 ## Arduino BbqDuino
 
-Author : Nicolas Dupont
+Author : Nicolas Dupont  
 Last Update : 24/12/2017  
 Current state : **Prototype finished**  
 
@@ -39,16 +39,16 @@ The web page is reloaded automaticaly every 3 minutes but you can click on the r
 
 	| BbqDuino
 	  => | App ( SqlDatabase and WebApp(php,html,css,js) )
-		 | Arduino  ( Arduino sketch and library )
-		 | Img  ( Pictures of the bbqduino)
+	     | Arduino  ( Arduino sketch and library )
+	     | Img  ( Pictures of the bbqduino)
 	     | Docs    ( Schematic / Diagram / Useful docs for the project )  
 	     readme.md
 
 
 **Code :**
 
-Arduino : [sketch](https://github.com/NicoDupont/Arduino-Projects/tree/master/BbqDuino/Arduino/bbqduino)  
-WebApp : [Scripts](https://github.com/NicoDupont/Arduino-Projects/tree/master/BbqDuino/App)  
+Arduino : [sketch](https://github.com/NicoDupont/BbqDuino/blob/master/Arduino/bbqduino)  
+WebApp : [Scripts](https://github.com/NicoDupont/BbqDuino/blob/master/App)  
 
 To save data and to use the web app, you need a database and a php/web server.    
 For the project I used :  
@@ -61,7 +61,7 @@ For the project I used :
 
 **Functional Diagram :**
 
-![diagram bbqduino](https://github.com/NicoDupont/Arduino-Projects/tree/master/BbqDuino/Docs/diagram bbqduino.png)
+![diagram bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Docs/diagram bbqduino.png)
 
 **Parts used :**
 
@@ -81,20 +81,20 @@ For the project I used :
  - 1x switch 2 positions to control the power suppley
  - 1x switch 3 positions to control the power supply of the nodemcu (usb or battery)
 
-![parts1 bbqduino](https://github.com/NicoDupont/Arduino-Projects/tree/master/BbqDuino/Img/breadboard_prototype.JPG)
+![parts1 bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/breadboard_prototype.JPG)
 
 **Web App :**
 
 The web app is responsive :  
 
-![web app iphone6 bbqduino](https://github.com/NicoDupont/Arduino-Projects/tree/master/BbqDuino/Img/bbqduino_ipad.PNG)
-![web app ipad bbqduino](https://github.com/NicoDupont/Arduino-Projects/tree/master/BbqDuino/Img/bbqduino_iphone6.PNG)
+![web app iphone6 bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/bbqduino_ipad.PNG)
+![web app ipad bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/bbqduino_iphone6.PNG)
 
 **Schematic :**
 
-![fritzing bbqduino]()
-![elec bbqduino]()
-![board bbqduino]()
+![fritzing bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/fritzing.png)
+![elec bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/elec_fritzing.png)
+![board bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/elec_board.png)
 
 **Possible improvements :**
 
