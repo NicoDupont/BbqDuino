@@ -17,7 +17,7 @@ I hope it will be a very good friend for cooking sessions on my barbecue.
 **Features :**
 
 - A WebApp to manage and monitor the cooking session.(the web app is designed to have just the necessary things)
-- Monitor on the lcd the temperatures and the time (total time and "partial" time. they can be reset with buttons).
+- Monitor on the lcd the temperatures and the time (total time and "partial" time. they can be reset with a button).
 - A led indicate us if the food temperature is reached or if the barbecue temperature is not good (too low or too high).
 - The 3 temperatures are stored in a database with a record every minutes.
 
