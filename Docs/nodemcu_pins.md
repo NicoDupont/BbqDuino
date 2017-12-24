@@ -1,0 +1,12 @@
+- D0 = GPIO16;
+- D1 = GPIO5;  => SDL  (I2C)
+- D2 = GPIO4;  => SDA  (I2C)
+- D3 = GPIO0;
+- D4 = GPIO2;
+- D5 = GPIO14;
+- D6 = GPIO12;
+- D7 = GPIO13;
+- D8 = GPIO15;
+- D9 = GPIO3; cannot be used
+- D10 = GPIO1; cannot be used
+- LED_BUILTIN = GPIO16 (auxiliary constant for the board LED, not a board pin);

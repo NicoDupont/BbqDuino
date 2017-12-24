@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<meta http-equiv="refresh" content="15">-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/css.css" rel="stylesheet">
+		<title>Session BbqDuino</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a class="btn btn-primary" href="bbqduino.html" role="button">Return</a>
+				</div>
+			</div>
+		<form id="formsession" method="post" action="#">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="status">
+          </div>
+        </div>
+      </div>
+			<div class="row">
+        <div class="col-md-12">
+					<div class="form-group">
+				    <label for="bbq">Barbecue :</label>
+				    <select class="form-control" id="bbq" name="bbq">
+				    </select>
+				  </div>
+        </div>
+      </div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+				    <label for="meat">Meat :</label>
+				    <select class="form-control" id="meat" name="meat">
+				    </select>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="foodtarget">Food Temperature Target :</label>
+						<input type="text" class="form-control" id="foodtarget" name="foodtarget">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="bbqtarget">Barbecue Temperature Target :</label>
+						<input type="text" class="form-control" id="bbqtarget" name="bbqtarget">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="description">Description :</label>
+						<textarea class="form-control" id="description" name="description" row="4"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+						<button type="submit" class="btn btn-primary">Add or Modify</button>
+				</div>
+			</div>
+		</form>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/session.js"></script>
+	</body>
+</html>

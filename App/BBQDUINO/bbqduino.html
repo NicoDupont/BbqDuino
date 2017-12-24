@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="refresh" content="180">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/css.css" rel="stylesheet">
+		<title>Arduino BbqDuino</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+        <div class="col-md-12">
+						<div id="head">
+							<div id="headcol1">
+								<a href="#" class="btn btn-link btn-sm" role="button" name="refreshdata" id="refreshdata"><img src="img/refresh.png" width="34"  /></a>
+							</div>
+							<div id="headcol2" >
+								<p align="center"><img src="img/bbqred.png" width="60" ></p>
+							</div>
+							<div id="headcol3">
+								<a href="session.html" class="btn btn-link btn-sm" role="button" name="updatesession"><img  src="img/wheel.png" width="35"   /></a>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+        </div>
+      </div>
+			<div class="row">
+				<div class="col-md-12">
+	        <div id="status">
+	        </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+	        <div id="bbq">
+	        </div>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-md-12" id="time">
+	        </div>
+			</div>
+			<div class="row">
+					<div class="col-md-12" id="airtemp">
+	        </div>
+			</div>
+			<div class="row">
+        <div class="col-md-6">
+						<!--
+						<div class="title">Food °C</div>
+						<div class="value">87</div>
+						<div class="target">/95</div>
+						-->
+						<table class="temp">
+							<tr>
+								<td class="title">
+								Food °C
+								</td>
+							</tr>
+						  <tr>
+						     <td class="value" id="foodtemp">
+						     </td>
+						     <td class="target" id="foodtarget">
+						     </td>
+						 </tr>
+						</table>
+        </div>
+				<div class="col-md-6">
+					<!--
+					<div class="title">Bbq °C</div>
+					<div class="value">160</div>
+					<div class="target">/155</div>
+					-->
+					<table class="temp">
+						<tr>
+							<td class="title">
+							Bbq °C
+							</td>
+						</tr>
+						<tr>
+							 <td class="value" id="bbqtemp">
+							 </td>
+							 <td class="target" id="bbqtarget">
+							 </td>
+					 </tr>
+					</table>
+        </div>
+      </div>
+			<div class="row">
+        <div class="col-md-12">
+					<div id="graph">
+            <canvas id="myChart" height="200px">
+						</canvas>
+					</div>
+        </div>
+      </div>
+			<div class="row">
+        <div class="col-md-12">
+					<div id="foot">
+						<div id="version">
+						 <a href="https://github.com/NicoDupont/BbqDuino">Github</a>
+					 	</div>
+						<div id="arduino">
+							<img src="img/arduino.png" width="65">
+					 	</div>
+						<div id="fin">
+	            <a class="btn btn-primary btn-danger" href="#" role="button" id="endsession">End</a>
+						</div>
+			 		</div>
+        </div>
+      </div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/Chart.min.js"></script>
+		<script src="js/bbqduino.js"></script>
+	</body>
+</html>
