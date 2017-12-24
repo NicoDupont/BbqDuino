@@ -9,7 +9,6 @@ I hope he would be a very good friend for cooking sessions on my barbecue.
 
 **To do List for final v1 ! :**  
 
-level shifter for the lcd
 1. Power supply the arduino from battery
 2. Electric card for integration
 3. Fritzing
@@ -72,7 +71,7 @@ For the project I used :
  - 1x 5mm leds + 1x 100 ohms resistors
  - 2x buttons + 2x 10k ohms resistors
  - 1x Lcd 20x4
- - 1x level shifter 3.3v/5v for the lcd witch is powered with 5v and not 3.3v
+ - 1x level shifter 3.3v/5v for the lcd witch is powered with 5v and not 3.3v [link](https://fr.aliexpress.com/item/Pratique-Simple-4-Canal-IIC-I2C-3-V-5-V-Logic-Level-Converter-Bidirektional-Shifter-Module/32839758085.html?spm=a2g0s.9042311.0.0.ONxQt6)
  - 1x 6xAA Battery Holder + 6x AA Eneloop 1.2-1.5v
  - 1x 3.3v regulator (XL6019)
  - 4x jack 2.5mm mono connector (if I add a 2 more sensors)
