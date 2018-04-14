@@ -1,7 +1,7 @@
 ## Arduino BbqDuino
 
 Author : Nicolas Dupont  
-Last Update : 24/12/2017  
+Last Update : 14/04/2018  
 Current state : **Prototype finished**  
 
 The goal is to read, store and display the temperature of a barbecue/grill to follow the cooking.  
@@ -40,7 +40,7 @@ The web page is reloaded automaticaly every 3 minutes but you can click on the r
 	  => | App ( SqlDatabase and WebApp(php,html,css,js) )
 	     | Arduino  ( Arduino sketch and library )
 	     | Img  ( Pictures of the bbqduino)
-	     | Docs    ( Schematic / Diagram / Useful docs for the project )  
+	     | Docs    ( Schematic / Diagram / Fritzing parts / Useful docs for the project )  
 	     readme.md
 
 
@@ -65,20 +65,19 @@ For the project I used :
 **Parts used :**
 
  - NodeMcu esp12 
- - 2x maverick sensors ET-73 ([smoker](http://www.maverickhousewares.com/parts/et-73-smoker-probe),[food](http://www.maverickhousewares.com/parts/et-7273-high-heat-6ft-food-probe)) + 2x 22k omhs resistors
+ - 3x maverick sensors ET-73 ([smoker](http://www.maverickhousewares.com/parts/et-73-smoker-probe),[food](http://www.maverickhousewares.com/parts/et-7273-high-heat-6ft-food-probe)) + 2x 22k omhs resistors
  - 1x LM35 analog sensor for the ambient temperature
  - 1x ADS1015 ADC I2C to connect the 2 maverick sensors because the nodemcu have only 1 analog input.
- - 1x 5mm leds + 1x 100 ohms resistors
+ - 1x 5mm leds + 1x 220 ohms resistors
  - 2x buttons + 2x 10k ohms resistors
- - 1x Lcd 20x4
+ - 1x Lcd 16x2
  - 1x level shifter 3.3v/5v for the lcd witch is powered with 5v and not 3.3v [link](https://fr.aliexpress.com/item/Pratique-Simple-4-Canal-IIC-I2C-3-V-5-V-Logic-Level-Converter-Bidirektional-Shifter-Module/32839758085.html?spm=a2g0s.9042311.0.0.ONxQt6)
- - 1x 6xAA Battery Holder + 6x AA Eneloop 1.2-1.5v
- - 1x 3.3v regulator (XL6019)
+ - 1x 6xAA Battery Holder
+ - 1x 5v regulator (XL6019)
  - 4x jack 2.5mm mono connector (if I add a 2 more sensors)
  - 1x led 5mm support
  - 1x plastic box
  - 1x switch 2 positions to control the power suppley
- - 1x switch 3 positions to control the power supply of the nodemcu (usb or battery)
 
 ![parts1 bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/breadboard_prototype.JPG)
 
@@ -91,8 +90,8 @@ The web app is responsive :
 
 **Schematic :**
 
-![fritzing bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/fritzing.png)
-![elec bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/elec_fritzing.png)
+![fritzing bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/bbqduino_bb.png)
+![elec bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/bbqduino_schema.png)
 ![board bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/elec_board.png)
 
 **Possible improvements :**
