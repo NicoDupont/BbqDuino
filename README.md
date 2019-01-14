@@ -1,11 +1,11 @@
 ## Arduino BbqDuino
 
 Author : Nicolas Dupont  
-Last Update : 14/04/2018  
+Last Update : 14/01/2019  
 Current state : **Prototype finished**  
 
 The goal is to read, store and display the temperature of a barbecue/grill to follow the cooking.  
-I hope it will be a very good friend for cooking sessions on my barbecue.  
+I hope it will be a very good friend for cooking sessions on my gaz barbecue.  
 
 **To do List for final v1 ! :**  
 
@@ -13,13 +13,14 @@ I hope it will be a very good friend for cooking sessions on my barbecue.
 2. Electric card for integration
 3. Fritzing
 4. Make integration into a box
+5. imrove the arduino code and web app code
 
 **Features :**
 
 - A WebApp to manage and monitor the cooking session.(the web app is designed to have just the necessary things)
 - Monitor on the lcd the temperatures and the time (total time and "partial" time. they can be reset with a button).
-- A led indicate us if the food temperature is reached or if the barbecue temperature is not good (too low or too high).
-- The 3 temperatures are stored in a database with a record every minutes.
+- A led indicate us if the food temperature is reached or if the barbecue temperature is not good (too low or too high).(+ IFTTT Alert)
+- The 4 temperatures are stored in a database with a record every minutes.
 
 **Start :**
 
@@ -52,8 +53,8 @@ WebApp : [Scripts](https://github.com/NicoDupont/BbqDuino/blob/master/App)
 To save data and to use the web app, you need a database and a php/web server.    
 For the project I used :  
 
- - Debian 9 with Mariadb/Mysql, php7 and apache2 in a virtualMachine on my local network.
- - Php/Jquery to manage all the data (backup, recovery and edit).
+ - Debian 9 with Mariadb/Mysql, php7 and apache2 on a raspberry pi on my local network.
+ - A web app (html/php/jquery) to visualize and manage all the data (backup, recovery and edit).
  - [Bootstrap](https://getbootstrap.com/) coupled with [ChartJs](http://www.chartjs.org/) to make the graph and the responsive design.
 
 => You need to adapt to your setting  
@@ -65,19 +66,20 @@ For the project I used :
 **Parts used :**
 
  - NodeMcu esp12 
- - 3x maverick sensors ET-73 ([smoker](http://www.maverickhousewares.com/parts/et-73-smoker-probe),[food](http://www.maverickhousewares.com/parts/et-7273-high-heat-6ft-food-probe)) + 2x 22k omhs resistors
- - 1x LM35 analog sensor for the ambient temperature
+ - 3x maverick sensors ET-73 ([smoker](http://www.maverickhousewares.com/parts/et-73-smoker-probe),[food](http://www.maverickhousewares.com/parts/et-7273-high-heat-6ft-food-probe)) + 3x 22k omhs resistors
+ - 1x DS18B20 digital sensor for the ambient temperature
  - 1x ADS1015 ADC I2C to connect the 2 maverick sensors because the nodemcu have only 1 analog input.
  - 1x 5mm leds + 1x 220 ohms resistors
  - 2x buttons + 2x 10k ohms resistors
  - 1x Lcd 16x2
  - 1x level shifter 3.3v/5v for the lcd witch is powered with 5v and not 3.3v [link](https://fr.aliexpress.com/item/Pratique-Simple-4-Canal-IIC-I2C-3-V-5-V-Logic-Level-Converter-Bidirektional-Shifter-Module/32839758085.html?spm=a2g0s.9042311.0.0.ONxQt6)
- - 1x 6xAA Battery Holder
+ - 2x 6xAA Battery Holder
  - 1x 5v regulator (XL6019)
- - 4x jack 2.5mm mono connector (if I add a 2 more sensors)
+ - 1x 3.3v regulator
+ - 4x jack 2.5mm mono connector (if I add a 1 more sensors)
  - 1x led 5mm support
  - 1x plastic box
- - 1x switch 2 positions to control the power suppley
+ - 1x switch 2 positions to control the power supply
 
 ![parts1 bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/breadboard_prototype.JPG)
 
@@ -96,8 +98,8 @@ The web app is responsive :
 
 **Possible improvements :**
 
-- Manage a fan for a charcoal grill
+- Oled 128*64
 - Use a better battery
 - Improve web app
-- 4 probs
-- Better screen 
+- 3 probs
+- IFttt alert
