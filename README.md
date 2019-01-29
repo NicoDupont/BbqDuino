@@ -9,16 +9,17 @@ I hope it will be a very good friend for cooking sessions on my gaz barbecue.
 
 **To do List for final v1 ! :**  
 
-1. Power supply the arduino from battery
+1. Power supply the arduino from power bank
 2. Electric card for integration
 3. Fritzing
 4. Make integration into a box
-5. imrove the arduino code and web app code
+5. improve the arduino code and web app code
+6. Add ifttt alert
 
 **Features :**
 
 - A WebApp to manage and monitor the cooking session.(the web app is designed to have just the necessary things)
-- Monitor on the lcd the temperatures and the time (total time and "partial" time. they can be reset with a button).
+- Monitor on the lcd the temperatures and the time ("partial" time can be reset with a button).
 - A led indicate us if the food temperature is reached or if the barbecue temperature is not good (too low or too high).(+ IFTTT Alert)
 - The 4 temperatures are stored in a database with a record every minutes.
 
@@ -66,20 +67,19 @@ For the project I used :
 **Parts used :**
 
  - NodeMcu esp12 
- - 3x maverick sensors ET-73 ([smoker](http://www.maverickhousewares.com/parts/et-73-smoker-probe),[food](http://www.maverickhousewares.com/parts/et-7273-high-heat-6ft-food-probe)) + 3x 22k omhs resistors
+ - 4x maverick sensors ET-73 ([smoker](http://www.maverickhousewares.com/parts/et-73-smoker-probe),[food](http://www.maverickhousewares.com/parts/et-7273-high-heat-6ft-food-probe)) + 4x 22k omhs resistors
  - 1x DS18B20 digital sensor for the ambient temperature
- - 1x ADS1015 ADC I2C to connect the 2 maverick sensors because the nodemcu have only 1 analog input.
+ - 1x ADS1015 ADC I2C to connect the 4 maverick sensors because the nodemcu have only 1 analog input.
  - 1x 5mm leds + 1x 220 ohms resistors
- - 2x buttons + 2x 10k ohms resistors
+ - 1x buttons + 1x 10k ohms resistors
  - 1x Lcd 16x2
  - 1x level shifter 3.3v/5v for the lcd witch is powered with 5v and not 3.3v [link](https://fr.aliexpress.com/item/Pratique-Simple-4-Canal-IIC-I2C-3-V-5-V-Logic-Level-Converter-Bidirektional-Shifter-Module/32839758085.html?spm=a2g0s.9042311.0.0.ONxQt6)
- - 2x 6xAA Battery Holder
- - 1x 5v regulator (XL6019)
  - 1x 3.3v regulator
- - 4x jack 2.5mm mono connector (if I add a 1 more sensors)
+ - 4x jack 2.5mm mono connector
  - 1x led 5mm support
  - 1x plastic box
  - 1x switch 2 positions to control the power supply
+ - 1x usb mini pcb
 
 ![parts1 bbqduino](https://github.com/NicoDupont/BbqDuino/blob/master/Img/breadboard_prototype.JPG)
 
@@ -99,7 +99,4 @@ The web app is responsive :
 **Possible improvements :**
 
 - Oled 128*64
-- Use a better battery
-- Improve web app
-- 3 probs
-- IFttt alert
+- json data
